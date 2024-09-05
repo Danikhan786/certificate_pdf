@@ -1,0 +1,117 @@
+.container.custom-container {
+  max-width: 90% !important;
+  padding-left: 16px;
+  padding-right: 16px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 0;
+    .logo {
+      flex: 1;
+      img {
+        max-height: 107px;
+        max-width: 382px;
+      }
+    }
+    .pricing-wrapper {
+      flex: 1;
+      button {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #000000;
+        font-size: 30px;
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container.custom-container {
+    .header {
+      .pricing-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container.custom-container {
+    max-width: 100% !important;
+  }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+  .container.custom-container {
+    .header {
+      .logo {
+        img {
+          max-height: 140px;
+        }
+      }
+      .pricing-wrapper {
+        button {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .container.custom-container {
+    label {
+      font-size: 25px;
+    }
+  }
+  .certificates-details-wrapper {
+    .react-select__control {
+      min-height: 59px;
+    }
+    .react-select__control,
+    .react-select__placeholder,
+    .react-select__single-value {
+      font-size: 25px;
+    }
+    input[type="date"],
+    input[type="text"].react-select__input,
+    input[type="text"] {
+      font-size: 25px;
+      padding: 1.8rem 0.85rem;
+    }
+    .upload-signature-wrapper {
+      button {
+        font-size: 25px;
+        padding: 0.8rem 1.5rem;
+      }
+      .signature-wrapper {
+        max-width: 435px;
+
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .stepper-wrapper {
+    .stepper-footer {
+      .carousalIntro {
+        p {
+          font-size: 25px;
+          padding-left: 90px;
+        }
+      }
+      button.stepper-next-btn {
+        font-size: 25px;
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  }
+}
